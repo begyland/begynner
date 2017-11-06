@@ -1,10 +1,14 @@
 'use strict'
 
+// TODO: publish package
+// TODO: CLI (global command)
+
 const fs = require('fs')
 const readline = require('readline')
 const chalk = require('chalk')
 const names = require('random-tree-names')
 
+// TODO: refactor: avoid duplicate
 let editorconfigContent
 let packageJSONContent
 
@@ -35,6 +39,7 @@ rl.question(`Project name (${projectName}): `,  (answer) => {
 		successLog(`${projectName} folder created!`)
 	})
 
+	// TODO: refactor: avoid duplicate
 	fs.writeFile(`${projectName}/.npmrc`, 'package-lock=false', (error) => {
 		if (error) throw error
 		successLog(`${projectName}/.npmrc created!`)
