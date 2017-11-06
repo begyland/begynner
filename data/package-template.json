@@ -1,0 +1,22 @@
+{
+  "name": "new-project",
+  "version": "0.0.1",
+  "description": "Description here",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/new-project.git"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "author": "Username <user.name@youremail.com> (http://username.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/new-project/issues"
+  },
+  "homepage": "https://github.com/username/new-project#readme"
+}

@@ -17,12 +17,17 @@
     "begynner",
     "scaffolding",
     "package",
-    "javascript"
+    "javascript",
+    "cli"
   ],
   "author": "Marcos Garcia de Lima <marckfree@gmail.com> (http://marcker.github.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcker/begynner/issues"
   },
-  "homepage": "https://github.com/marcker/begynner#readme"
+  "homepage": "https://github.com/marcker/begynner#readme",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "random-tree-names": "^3.0.5"
+  }
 }
