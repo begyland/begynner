@@ -1,0 +1,28 @@
+{
+  "name": "begynner",
+  "version": "0.0.1",
+  "description": "Boilerplate to kickstart new package or experiences",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcker/begynner.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "kickstarter",
+    "node",
+    "begynner",
+    "scaffolding",
+    "package",
+    "javascript"
+  ],
+  "author": "Marcos Garcia de Lima <marckfree@gmail.com> (http://marcker.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcker/begynner/issues"
+  },
+  "homepage": "https://github.com/marcker/begynner#readme"
+}
