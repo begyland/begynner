@@ -1,7 +1,6 @@
+#!/usr/bin/env node
+
 'use strict'
-
-// TODO: publish package
-
 const fs = require('fs')
 const readline = require('readline')
 const chalk = require('chalk')
