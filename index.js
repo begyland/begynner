@@ -10,12 +10,12 @@ const names = require('random-tree-names')
 let editorconfigContent
 let packageJSONContent
 
-fs.readFile('./data/editorconfig-template.toml', 'utf8', (error, data) => {
+fs.readFile(`${__dirname}/templates/editorconfig-template.toml`, 'utf8', (error, data) => {
 	if (error) throw error
 	editorconfigContent = data
 })
 
-fs.readFile('./data/package-template.json', 'utf8', (error, data) => {
+fs.readFile(`${__dirname}/templates/packagejson-template.json`, 'utf8', (error, data) => {
 	if (error) throw error
 	packageJSONContent = data
 })
