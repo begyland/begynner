@@ -1,7 +1,6 @@
 'use strict'
 
 // TODO: publish package
-// TODO: CLI (global command)
 
 const fs = require('fs')
 const readline = require('readline')
