@@ -3,9 +3,6 @@
   "version": "1.0.1",
   "description": "A boilerplate to kickstart new nodejs packages or experiences",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
   "bin": {
     "beg": "index.js"
   },
