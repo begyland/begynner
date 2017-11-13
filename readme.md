@@ -4,6 +4,8 @@
 
 <p align="center">A boilerplate to kickstart new nodejs packages or experiences</p>
 
+[![Travis](https://img.shields.io/travis/marcker/begynner.svg)](https://travis-ci.org/marcker/begynner)
+
 ---
 
 ## Install & run
