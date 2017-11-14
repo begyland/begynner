@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/marcker/begynner/master/assets/images/logo-begynner.png" width="293" height="75">
 </p>
 
-<p align="center">A boilerplate to kickstart new nodejs packages or experiences</p>
+<p align="center">A boilerplate to kickstart new nodejs packages or experiences.</p>
 
 [![Travis](https://img.shields.io/travis/marcker/begynner.svg)](https://travis-ci.org/marcker/begynner)
 [![npm version](https://img.shields.io/npm/v/begynner.svg)](https://www.npmjs.com/package/begynner)
