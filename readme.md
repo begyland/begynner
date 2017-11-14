@@ -5,6 +5,7 @@
 <p align="center">A boilerplate to kickstart new nodejs packages or experiences</p>
 
 [![Travis](https://img.shields.io/travis/marcker/begynner.svg)](https://travis-ci.org/marcker/begynner)
+[![npm version](https://img.shields.io/npm/v/begynner.svg)](https://www.npmjs.com/package/begynner)
 
 ---
 
