@@ -32,6 +32,7 @@ Files included:
 - [contributing.md](https://github.com/blog/1184-contributing-guidelines)
 - [code_of_conduct.md](https://opensource.guide/code-of-conduct/) - Version 1.4
 - .github/[issue_template.md](https://github.com/blog/2111-issue-and-pull-request-templates)
+- [package.json](https://docs.npmjs.com/files/package.json)
 
 Example:
 
