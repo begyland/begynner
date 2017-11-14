@@ -19,7 +19,19 @@ npm i -g begynner
 
 This will create the `beg` command to use in the [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator).
 
-When type `beg` in the terminal emulator and return you can provide a directory name or use the suggested name. :sparkles:Ready!:sparkles: Now there is a folder with your configuration files and a [package.json](https://docs.npmjs.com/files/package.json).
+When type `beg` in the terminal emulator and return you can provide a directory name or use the suggested name. :sparkles:Ready!:sparkles: Now there is a folder with your configuration files - see below the list - and a [package.json](https://docs.npmjs.com/files/package.json).
+
+Files included:
+
+- [.npmrc](https://docs.npmjs.com/files/npmrc)
+- [.travis.yml](https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI)
+- [.editorconfig](http://editorconfig.org/)
+- [.gitignore](https://git-scm.com/docs/gitignore)
+- [readme.md](https://en.wikipedia.org/wiki/README)
+- license.md - [MIT](https://opensource.org/licenses/MIT) copy
+- [contributing.md](https://github.com/blog/1184-contributing-guidelines)
+- [code_of_conduct.md](https://opensource.guide/code-of-conduct/) - Version 1.4
+- .github/[issue_template.md](https://github.com/blog/2111-issue-and-pull-request-templates)
 
 Example:
 
