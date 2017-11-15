@@ -23,16 +23,16 @@ When type `beg` in the terminal emulator and return you can provide a directory 
 
 Files included:
 
-- [.npmrc](https://docs.npmjs.com/files/npmrc)
-- [.travis.yml](https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI)
+- [code_of_conduct.md](https://opensource.guide/code-of-conduct/) - Version 1.4
+- [contributing.md](https://github.com/blog/1184-contributing-guidelines)
 - [.editorconfig](http://editorconfig.org/)
 - [.gitignore](https://git-scm.com/docs/gitignore)
-- [readme.md](https://en.wikipedia.org/wiki/README)
-- license.md - [MIT](https://opensource.org/licenses/MIT) copy
-- [contributing.md](https://github.com/blog/1184-contributing-guidelines)
-- [code_of_conduct.md](https://opensource.guide/code-of-conduct/) - Version 1.4
 - .github/[issue_template.md](https://github.com/blog/2111-issue-and-pull-request-templates)
+- license.md - [MIT](https://opensource.org/licenses/MIT) copy
+- [.npmrc](https://docs.npmjs.com/files/npmrc)
 - [package.json](https://docs.npmjs.com/files/package.json)
+- [readme.md](https://en.wikipedia.org/wiki/README)
+- [.travis.yml](https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI)
 
 Example:
 

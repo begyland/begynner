@@ -5,47 +5,51 @@ const fs = require('fs')
 const readline = require('readline')
 const chalk = require('chalk')
 const names = require('random-tree-names')
-const dirTemplates = `${__dirname}/templates`;
-const editorconfigContent = readFile(`${dirTemplates}/editorconfig-template.toml`)
-const packageJSONContent = readFile(`${dirTemplates}/packagejson-template.json`)
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+
 const successLog = (text) => console.log(`${chalk.green("✔︎")} ${text}`)
 
-function readFile(dirfile) {
-	fs.readFile(dirfile, 'utf8', (error, data) => {
-		if (error) throw error
-		return data;
-	})
+const readFile = (file) => fs.readFileSync(file, 'utf8')
+
+const createFolder = (folder) => {
+	fs.mkdirSync(folder)
+	successLog(`${folder} folder created!`)
 }
 
-function createFolder(folder) {
-    fs.mkdir(projectName, (error) => {
-        if (error) throw error
-        successLog(`${folder} folder created!`)
-    })
+const createFile = (folder, file, content) => {
+	fs.writeFileSync(`${folder}/${file}`, content)
+	successLog(`${folder}/${file} created!`)
 }
-
-function createFile(folder, file, content) {
-    fs.writeFile(`${folder}/${file}`, content, (error) => {
-        if (error) throw error
-        successLog(`${folder}/${file} created!`)
-    })
-}
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
 
 let projectName = names.random('de')
 
 rl.question(`Project name (${projectName}): `, (answer) => {
-    projectName = answer || projectName
+	const dirTemplates = `${__dirname}/templates`
+	const codeOfConductContent = readFile(`${dirTemplates}/code_of_conduct-template.md`)
+	const contributingContent = readFile(`${dirTemplates}/contributing-template.md`)
+	const editorconfigContent = readFile(`${dirTemplates}/editorconfig-template.ini`)
+	const gitignoreContent = readFile(`${dirTemplates}/gitignore-template.txt`)
+	const issueTemplateContent = readFile(`${dirTemplates}/issue_template-template.md`)
+	const licenseContent = readFile(`${dirTemplates}/license-template.md`)
+	const npmrcContent = readFile(`${dirTemplates}/npmrc-template.ini`)
+	const packageContent = readFile(`${dirTemplates}/package-template.json`)
+	const readmeContent = readFile(`${dirTemplates}/readme-template.md`)
+	const travisContent = readFile(`${dirTemplates}/travis-template.yml`)
+	const projectFolder = answer || projectName
+	const githubFolder = `${projectFolder}/.github`
 
-    createFolder(projectName);
-    createFile(projectName, '.npmrc', 'package-lock=false');
-    createFile(projectName, '.gitignore', 'node_modules');
-    createFile(projectName, '.editorconfig', editorconfigContent);
-    createFile(projectName, '.package.json', packageJSONContent);
+	createFolder(projectFolder)
+	createFolder(githubFolder)
+	createFile(projectFolder, 'code_of_conduct.md', codeOfConductContent)
+	createFile(projectFolder, 'contributing.md', contributingContent)
+	createFile(projectFolder, '.editorconfig', editorconfigContent)
+	createFile(projectFolder, '.gitignore', gitignoreContent)
+	createFile(githubFolder, 'issue_template.md', issueTemplateContent)
+	createFile(projectFolder, 'license.md', licenseContent)
+	createFile(projectFolder, '.npmrc', npmrcContent)
+	createFile(projectFolder, 'package.json', packageContent)
+	createFile(projectFolder, 'readme.md', readmeContent)
+	createFile(projectFolder, '.travis.yml', travisContent)
 
-    rl.close()
+	rl.close()
 })
