@@ -6,28 +6,26 @@ const readline = require('readline')
 const chalk = require('chalk')
 const names = require('random-tree-names')
 const dirTemplates = `${__dirname}/templates`;
-
-let editorconfigContent = readFile(`${dirTemplates}/editorconfig-template.toml`);
-let packageJSONContent = readFile(`${dirTemplates}/packagejson-template.json`);
-
+const editorconfigContent = readFile(`${dirTemplates}/editorconfig-template.toml`)
+const packageJSONContent = readFile(`${dirTemplates}/packagejson-template.json`)
 const successLog = (text) => console.log(`${chalk.green("✔︎")} ${text}`)
 
-function readFile(dirfile){
+function readFile(dirfile) {
 	fs.readFile(dirfile, 'utf8', (error, data) => {
 		if (error) throw error
 		return data;
 	})
 }
 
-function createFolder(folder){
+function createFolder(folder) {
     fs.mkdir(projectName, (error) => {
         if (error) throw error
         successLog(`${folder} folder created!`)
     })
 }
 
-function createFile(folder, file, content){
-    fs.writeFile(`${folder}/${file}`, `${content}`, (error) => {
+function createFile(folder, file, content) {
+    fs.writeFile(`${folder}/${file}`, content, (error) => {
         if (error) throw error
         successLog(`${folder}/${file} created!`)
     })
