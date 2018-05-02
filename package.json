@@ -1,6 +1,6 @@
 {
   "name": "begynner",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A boilerplate to kickstart new nodejs packages or experiences",
   "main": "index.js",
   "engine": {
