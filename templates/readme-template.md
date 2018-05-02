@@ -1,4 +1,4 @@
-# New Project
+# {{username}}
 
 ---
 
@@ -7,7 +7,7 @@
 Install:
 
 ```bash
-npm i new-project
+npm i {{projectname}}
 ```
 
 Description here / How to use.
@@ -16,6 +16,6 @@ Description here / How to use.
 
 ## License
 
-The MIT License ([MIT](https://github.com/username/new-project/blob/master/license.md))
+The MIT License ([MIT](https://github.com/{{username}}/{{projectname}}/blob/master/license.md))
 
-Copyright (c) 2017 username
+Copyright (c) {{year}} {{username}}
