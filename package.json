@@ -4,7 +4,7 @@
   "description": "A boilerplate to kickstart new nodejs packages or experiences",
   "main": "index.js",
   "engine": {
-    "node": ">=4.0.0"
+    "node": ">=9.0.0"
   },
   "bin": {
     "beg": "index.js"
