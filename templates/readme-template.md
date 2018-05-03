@@ -1,4 +1,4 @@
-# {{username}}
+# {{projectname}}
 
 ---
 
