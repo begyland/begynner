@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/marcker/begynner/master/assets/images/logo-begynner.png" width="293" height="75">
+  <img src="https://raw.githubusercontent.com/marcker/begynner/main/assets/images/logo-begynner.svg" width="293" height="75">
 </p>
 
 <p align="center">A boilerplate to kickstart new nodejs packages or experiences.</p>
