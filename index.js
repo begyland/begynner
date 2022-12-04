@@ -12,7 +12,7 @@ rl.question('GitHub username: ', async (usernameAnswer) => {
     rl.question(`choose template: `, async (modelAnswer) => {
 
       const data = {
-        projectname: projectName || projectNameAnswer || "simple_project",
+        projectname: projectNameAnswer || projectName || "simple_project",
         username: usernameAnswer || 'username',
         year: (new Date().getFullYear()),
         template: modelAnswer || "simple"
