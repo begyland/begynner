@@ -7,6 +7,10 @@ const names = require('random-tree-names')
 const Mustache = require('mustache')
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 
+rl.on('line', function (line) {
+  console.log(line);
+})
+
 rl.question('GitHub username: ', async (usernameAnswer) => {
   let projectName = await names.random('de')
 
