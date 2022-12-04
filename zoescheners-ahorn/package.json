@@ -1,0 +1,22 @@
+{
+  "name": "{{project_name}}",
+  "version": "0.0.1",
+  "description": "Description here",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{username}}/{{project_name}}.git"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "author": "{{username}} <{{username}}@youremail.com> (http://{{username}}.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/{{username}}/{{projectname}}/issues"
+  },
+  "homepage": "https://github.com/{{username}}/{{projectname}}#readme"
+}
