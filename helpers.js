@@ -24,17 +24,16 @@ exports.rreaddir = async (filePath) => {
 
 exports.makeProject = async (data) => {
   try {
-    let dirTemplateModel = path.resolve(__dirname, 'templates/_model')
-    let dirTemplate = path.resolve(__dirname, 'templates')
+    const dirTemplateModel = path.resolve(__dirname, 'templates/_model')
+    const dirTemplate = path.resolve(__dirname, 'templates')
     const { projectname, template } = data
 
     const projectFolder = projectname
 
-    let filePath = []
-    let templatePath = await this.rreaddir(dirTemplate + '/' + template)
-    let modelPath = await this.rreaddir(dirTemplateModel)
+    const templatePath = await this.rreaddir(`${dirTemplate}/${template}`)
+    const modelPath = await this.rreaddir(dirTemplateModel)
 
-    filePath = [...templatePath, ...modelPath]
+    const filePath = [...templatePath, ...modelPath]
 
     if (!filePath) {
       this.errorLog('Template not found')
@@ -45,10 +44,12 @@ exports.makeProject = async (data) => {
 
     await Promise.all(
       filePath.map(async (relativePath) => {
-        let nameFile = relativePath.split('/').pop()
-        let renderMustache = ['readme.md', 'package.json', 'license.md'].find(
-          (x) => x == nameFile
+        const nameFile = relativePath.split('/').pop()
+
+        const renderMustache = ['readme.md', 'package.json', 'license.md'].find(
+          (file) => file === nameFile
         )
+
         const readFile = renderMustache
           ? Mustache.render(await fs.readFile(relativePath, 'utf8'), data)
           : await fs.readFile(relativePath, 'utf8')
@@ -68,7 +69,8 @@ exports.makeProject = async (data) => {
 }
 
 exports.createFolder = async (folder) => {
-  await makeDir(folder).then((path) => this.successLog(`${path} created!`))
+  await makeDir(folder)
+    .then((path) => this.successLog(`${path} created!`))
 }
 
 exports.createFile = async (folder, file, content) => {
