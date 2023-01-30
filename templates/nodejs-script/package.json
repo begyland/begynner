@@ -1,5 +1,5 @@
 {
-  "name": "{{projectname}}",
+  "name": "{{project_name}}",
   "version": "0.0.1",
   "description": "Description here",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{username}}/{{projectname}}.git"
+    "url": "git+https://github.com/{{username}}/{{project_name}}.git"
   },
   "keywords": [
     "keyword"
