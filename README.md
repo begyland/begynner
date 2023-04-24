@@ -32,7 +32,7 @@ Files included:
 
 Example:
 
-![Example](https://user-images.githubusercontent.com/958723/215357046-cf2a191d-09a0-412c-9c21-c45d74cf41ae.png)
+![Example](https://user-images.githubusercontent.com/958723/234089558-eb6482e0-e594-41e8-ba7d-c560044e825f.png)
 
 ---
 
