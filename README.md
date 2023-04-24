@@ -2,23 +2,21 @@
   <img src="https://raw.githubusercontent.com/marcker/begynner/main/assets/images/logo-begynner.svg" width="293" height="75">
 </p>
 
-<p align="center">A boilerplate to kickstart new nodejs packages or experiences.</p>
+<p align="center">A boilerplate to kickstart new Node.js packages or experiences.</p>
 
 [![npm version](https://img.shields.io/npm/v/begynner.svg)](https://www.npmjs.com/package/begynner)
 
----
+## Installation & Usage
 
-## Install & run
-
-Install:
+To install Begynner, run the following command:
 
 ```bash
 npm i -g begynner
 ```
 
-This will create the `beg` command to use in the [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator).
+This will create the beg command that can be used in your [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator).
 
-When type `beg` in the terminal emulator and return you can provide your GitHub userName and a directory name or use the suggested name and then type the project (index). :sparkles:Ready!:sparkles: Now there is a folder with your configuration files - see below the list - and a [package.json](https://docs.npmjs.com/files/package.json).
+To start a new project, simply type beg in the terminal emulator and provide your GitHub username and a directory name, or use the suggested name. Select the project template (index) and your new project is ready to go! 🎉
 
 Files included:
 
