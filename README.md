@@ -24,13 +24,13 @@ Files included:
 
 - index.js
 - [code_of_conduct.md](https://opensource.guide/code-of-conduct/) - Version 1.4
-- [contributing.md](https://github.com/blog/1184-contributing-guidelines)
+- [CONTRIBUTING.md](https://github.com/blog/1184-contributing-guidelines)
 - [.editorconfig](http://editorconfig.org/)
 - [.gitignore](https://git-scm.com/docs/gitignore)
 - .github/[issue_template.md](https://github.com/blog/2111-issue-and-pull-request-templates)
-- license.md - [MIT](https://opensource.org/licenses/MIT) copy
+- LICENSE.md - [MIT](https://opensource.org/licenses/MIT) copy
 - [package.json](https://docs.npmjs.com/files/package.json)
-- [readme.md](https://en.wikipedia.org/wiki/README)
+- [README.md](https://en.wikipedia.org/wiki/README)
 
 Example:
 
@@ -40,6 +40,6 @@ Example:
 
 ## License
 
-The MIT License ([MIT](https://github.com/marcker/begynner/blob/master/license.md))
+The MIT License ([MIT](LICENSE.md))
 
 Copyright (c) 2023

@@ -46,6 +46,10 @@ exports.makeProject = async (data) => {
       filePath.map(async (relativePath) => {
         const nameFile = relativePath.split('/').pop()
 
+        if (nameFile === 'issue_template.md') {
+          return
+        }
+
         const renderMustache = ['README.md', 'package.json', 'LICENSE.md'].find(
           (file) => file === nameFile
         )
@@ -58,9 +62,9 @@ exports.makeProject = async (data) => {
       })
     )
 
-    this.infoLog(
-      `Congratulations project ${projectFolder} successfully created!`
-    )
+    await this.createFile(`${projectFolder}/.github`, 'issue_template.md', 'issue_template.md')
+
+    this.infoLog(`Congratulations project ${projectFolder} successfully created!`)
 
     return true
   } catch (err) {

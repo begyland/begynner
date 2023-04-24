@@ -16,6 +16,6 @@ Description here / How to use.
 
 ## License
 
-The MIT License ([MIT](https://github.com/{{userName}}/{{projectName}}/blob/master/license.md))
+The MIT License ([MIT](https://github.com/{{userName}}/{{projectName}}/#LICENSE))
 
 Copyright (c) {{year}} {{userName}}
