@@ -26,9 +26,9 @@ exports.makeProject = async (data) => {
   try {
     const dirTemplateModel = path.resolve(__dirname, 'templates/_model')
     const dirTemplate = path.resolve(__dirname, 'templates')
-    const { projectname, template } = data
+    const { projectName, template } = data
 
-    const projectFolder = projectname
+    const projectFolder = projectName
 
     const templatePath = await this.rreaddir(`${dirTemplate}/${template}`)
     const modelPath = await this.rreaddir(dirTemplateModel)
@@ -46,7 +46,7 @@ exports.makeProject = async (data) => {
       filePath.map(async (relativePath) => {
         const nameFile = relativePath.split('/').pop()
 
-        const renderMustache = ['readme.md', 'package.json', 'license.md'].find(
+        const renderMustache = ['README.md', 'package.json', 'LICENSE.md'].find(
           (file) => file === nameFile
         )
 

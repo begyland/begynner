@@ -12,16 +12,16 @@ const rl = readline.createInterface({
 
 let templates = [
   {
-    name: 'nodejs-script',
+    name: 'simple',
     template: 'A simple node.js script.'
   },
   {
-    name: 'nodejs-api',
+    name: 'API',
     template: 'A node.js API using express framework.'
   }
 ]
 
-rl.question('GitHub Username: ', async (usernameAnswer) => {
+rl.question('GitHub user name: ', async (userNameAnswer) => {
   let projectName = await names.random('de')
 
   rl.question(`Project name (${projectName}): `, async (projectNameAnswer) => {
@@ -29,8 +29,8 @@ rl.question('GitHub Username: ', async (usernameAnswer) => {
 
     rl.question('Choose a template: ', async (modelAnswer) => {
       const data = {
-        projectname: projectNameAnswer || projectName,
-        username: usernameAnswer || process.env.USER,
+        projectName: projectNameAnswer || projectName,
+        userName: userNameAnswer || 'johnDoe',
         year: new Date().getFullYear(),
         template: templates[modelAnswer].name,
       }
