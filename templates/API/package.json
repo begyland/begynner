@@ -1,0 +1,26 @@
+{
+  "name": "{{projectName}}",
+  "version": "0.0.1",
+  "description": "Description here",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{userName}}/{{projectName}}.git"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "author": "{{userName}} <{{userName}}@youremail.com> (http://{{userName}}.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/{{userName}}/{{projectName}}/issues"
+  },
+  "homepage": "https://github.com/{{userName}}/{{projectName}}#README",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

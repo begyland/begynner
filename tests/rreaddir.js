@@ -15,5 +15,5 @@ async function rreaddir(filePath) {
   return files.flat()
 }
 
-rreaddir(`${__dirname}/../templates/nodejs-script`)
+rreaddir(`${__dirname}/../templates/simple`)
   .then(result => console.log(result))
